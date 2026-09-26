@@ -20,8 +20,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 from xgboost import XGBClassifier
 from huggingface_hub import HfApi, create_repo, hf_hub_download
-from dotenv import load_dotenv
-load_dotenv()
+
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 HF_USERNAME = os.getenv("HF_USERNAME")
