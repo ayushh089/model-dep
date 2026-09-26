@@ -5,10 +5,8 @@ import pandas as pd
 import streamlit as st
 from huggingface_hub import hf_hub_download
 
-from dotenv import load_dotenv
-load_dotenv()
 
-HF_USERNAME = os.getenv("HF_USERNAME", "<your-hf-username>")
+HF_USERNAME = os.getenv("HF_USERNAME", "ayushh089")
 MODEL_REPO_ID = f"{HF_USERNAME}/tourism-package-prediction-model"
 
 @st.cache_resource
