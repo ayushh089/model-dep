@@ -2,8 +2,7 @@
 import os
 from huggingface_hub import HfApi, create_repo
 
-from dotenv import load_dotenv
-load_dotenv()
+
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 HF_USERNAME = os.getenv("HF_USERNAME")

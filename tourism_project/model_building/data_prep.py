@@ -9,8 +9,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi, hf_hub_download
 
-from dotenv import load_dotenv
-load_dotenv()
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 HF_USERNAME = os.getenv("HF_USERNAME")
